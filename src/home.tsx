@@ -1,12 +1,9 @@
-import { SignInButton } from "@clerk/clerk-react";
-import { Button } from "./components/ui/button";
+import Header from "./components/header";
 
 function Home() {
   return (
     <div>
-      <SignInButton mode="modal" forceRedirectUrl="/">
-        <Button>Sign in</Button>
-      </SignInButton>
+      <Header />
     </div>
   );
 }
