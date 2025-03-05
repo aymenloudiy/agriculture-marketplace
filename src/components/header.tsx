@@ -5,7 +5,7 @@ export default function Header() {
   const { isSignedIn } = useUser();
   return (
     <div className="flex justify-between items-center shadow-sm p-5">
-      <img src="../../public/logo.svg" alt="" />
+      <img src="./logo.svg" alt="" />
       <ul className="hidden md:flex gap-16">
         <li className="font-medium hover:scale-105 transition-all cursor-pointer hover:text-primary">
           Home

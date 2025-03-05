@@ -1,3 +1,4 @@
+import Categories from "./components/categories";
 import Header from "./components/header";
 import Hero from "./components/hero";
 
@@ -6,6 +7,7 @@ function Home() {
     <div>
       <Header />
       <Hero />
+      <Categories />
     </div>
   );
 }
