@@ -1,4 +1,14 @@
-const items = {
+interface itemsList {
+  [key: string]: itemObject;
+}
+interface itemObject {
+  id: string;
+  product_name: string;
+  product_price: string;
+  product_currency: string;
+  product_image: string;
+}
+const items: itemsList = {
   item1: {
     id: crypto.randomUUID(),
     product_name: "Miel_1",
