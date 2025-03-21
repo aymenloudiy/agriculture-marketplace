@@ -1,5 +1,5 @@
-import { styles } from "./itemCard.module.css";
+import styles from "./itemCard.module.css";
 
 export default function ItemCard() {
-  return <div>ItemCard</div>;
+  return <div className={styles.itemCard}>ItemCard</div>;
 }

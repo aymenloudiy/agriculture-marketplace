@@ -1,5 +1,12 @@
-import { styles } from "./header.module.css";
+import Categories from "./Categories";
+import styles from "./header.module.css";
+import Navbar from "./Navbar";
 
 export default function header() {
-  return <div>nav bar and categories go here</div>;
+  return (
+    <div className={styles.header}>
+      <Navbar></Navbar>
+      <Categories></Categories>
+    </div>
+  );
 }

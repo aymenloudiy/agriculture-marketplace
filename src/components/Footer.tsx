@@ -1,8 +1,8 @@
-import { styles } from "./footer.module.css";
+import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <div>Logo</div>
       <div>
         <div>

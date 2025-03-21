@@ -1,8 +1,8 @@
-import { styles } from "./categories.module.css";
+import styles from "./categories.module.css";
 
 export default function categories() {
   return (
-    <div>
+    <div className={styles.categories}>
       <ul>
         <li>Honey</li>
         <li>Oil</li>
