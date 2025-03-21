@@ -9,6 +9,7 @@ import Login from "./pages/Login.tsx";
 import Payment from "./pages/Payment.tsx";
 import Details from "./pages/Details.tsx";
 import Error from "./pages/Error.tsx";
+import Cart from "./pages/Cart.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -20,6 +21,7 @@ createRoot(document.getElementById("root")!).render(
           <Route path="login" element={<Login />} />
           <Route path="payment" element={<Payment />} />
           <Route path="details" element={<Details />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
