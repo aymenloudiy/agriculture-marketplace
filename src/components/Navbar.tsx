@@ -3,14 +3,10 @@ import styles from "./navbar.module.css";
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <div>
-        <div>Logo</div>
-
-        <NavLink to={"/"}>Shop</NavLink>
-        <NavLink to={"/about"}>About</NavLink>
-        <NavLink to={"/cart"}>Cart</NavLink>
-        <NavLink to={"/login"}>Sign in</NavLink>
-      </div>
+      <NavLink to={"/"}>Shop</NavLink>
+      <NavLink to={"/about"}>About</NavLink>
+      <NavLink to={"/cart"}>Cart</NavLink>
+      <NavLink to={"/login"}>Sign in</NavLink>
     </nav>
   );
 }

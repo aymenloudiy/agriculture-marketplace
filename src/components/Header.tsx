@@ -4,9 +4,12 @@ import Navbar from "./Navbar";
 
 export default function header() {
   return (
-    <div className={styles.header}>
-      <Navbar></Navbar>
+    <header className={styles.header}>
+      <div>
+        <h1>Logo</h1>
+        <Navbar></Navbar>
+      </div>
       <Categories></Categories>
-    </div>
+    </header>
   );
 }
