@@ -25,18 +25,14 @@ export default function Login() {
           <div>
             <div>
               <label htmlFor="remember">Remember for 30 days</label>
-              <input
-                type="checkbox"
-                name="remember"
-                id="remember"
-                placeholder="remember"
-              />
+              <input type="checkbox" name="remember" id="remember" />
             </div>
             <div>
               {/* TODO: This should be a NavLink */}
               <a href="">Forgot Password?</a>
             </div>
           </div>
+          <button type="submit">Sign-in</button>
         </form>
         <p>Or Continue with</p>
         <ul>
