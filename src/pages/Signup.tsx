@@ -1,4 +1,4 @@
-import AltLogin from "../components/AltLogin";
+import AltLogin from "../components/Login/AltLogin";
 
 export default function Signup() {
   return (
