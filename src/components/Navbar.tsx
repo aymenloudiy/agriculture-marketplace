@@ -3,13 +3,13 @@ import styles from "./navbar.module.css";
 export default function Navbar() {
   return (
     <nav className={styles.navbar}>
-      <div>
+      <div className={styles.nav_items}>
         <form action="">
           {/* TODO: Hide the label */}
           <label htmlFor="search">search</label>
           <input type="text" name="search" id="search" placeholder="search" />
         </form>
-        <div>
+        <div className={styles.nav_settings}>
           <ul>
             {/* TODO: These should be NavLinks */}
             <li>
@@ -24,12 +24,12 @@ export default function Navbar() {
           </ul>
         </div>
         {/* TODO: This should be a NavLink, add the badge as well */}
-        <div>
+        <div className={styles.nav_cart}>
           <a href="">Cart</a>
         </div>
       </div>
-      <div>
-        <div>
+      <div className={styles.nav_items}>
+        <div className={styles.nav_links}>
           <NavLink
             className={({ isActive }) => (isActive ? styles.active : "")}
             to={"/"}
@@ -61,7 +61,7 @@ export default function Navbar() {
             Help Center
           </NavLink>
         </div>
-        <div>
+        <div className={styles.nav_selects}>
           <form action="">
             <select name="language" id="language" defaultValue="English">
               <option value="english">English</option>
