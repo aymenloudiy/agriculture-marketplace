@@ -1,0 +1,38 @@
+.nav_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav_links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  a {
+    color: #fff;
+  }
+}
+.nav_selects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_settings {
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    li {
+      list-style-type: none;
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+.nav_cart {
+  a {
+    color: #fff;
+  }
+}
