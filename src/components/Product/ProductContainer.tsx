@@ -1,10 +1,11 @@
 import ProductCarousel from "./ProductCarousel";
 import ProductDetails from "./ProductDetails";
 import ProductShippingInfo from "./ProductShippingInfo";
+import style from "./productContainer.module.css";
 
 export default function ProductContainer() {
   return (
-    <div>
+    <div className={style.productContainer}>
       <h2>Product Name</h2>
       <nav>
         {/* TODO: These should be NavLinks */}
