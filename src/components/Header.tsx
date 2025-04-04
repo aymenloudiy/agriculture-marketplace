@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 export default function header() {
   return (
     <header className={styles.header}>
-      <div>
+      <div className={styles.header_children}>
         <h1>Logo</h1>
         <Navbar></Navbar>
       </div>
