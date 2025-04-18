@@ -1,0 +1,164 @@
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.stepDone {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.circleDone {
+  background-color: #68b279;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.edit {
+  font-size: 0.85rem;
+  color: #888;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.circleActive {
+  background-color: #ea5d65;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input {
+  padding: 0.75rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.row input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.togglePromo {
+  background: none;
+  border: none;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #444;
+  cursor: pointer;
+  text-align: left;
+}
+
+.textarea {
+  width: 100%;
+  padding: 0.75rem;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.terms {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.payBtn {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ea5d65;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.payBtn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.summary {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.4rem 0;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.red {
+  color: #d64d5a;
+}
+
+.bonusBox {
+  background: #f1f3f5;
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.95rem;
+}

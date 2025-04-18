@@ -6,7 +6,7 @@ export default function header() {
   return (
     <header className={styles.header}>
       <div className={styles.header_children}>
-        <h1>Logo</h1>
+        {/* <h1>Logo</h1> */}
         <Navbar></Navbar>
       </div>
       <Categories></Categories>

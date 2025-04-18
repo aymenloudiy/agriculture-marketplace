@@ -1,0 +1,48 @@
+.wrapper {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.timer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.timer span {
+  background: #ea5d65;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+.viewAll {
+  font-size: 0.9rem;
+  color: #444;
+  text-decoration: none;
+}
+
+.carousel {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}

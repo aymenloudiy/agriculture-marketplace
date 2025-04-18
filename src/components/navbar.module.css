@@ -1,7 +1,15 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 1rem;
+  padding-block-end: 1rem;
+}
 .nav_items {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding-block-start: 1.5rem;
 }
 .nav_links {
   display: flex;
@@ -16,6 +24,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
+
+  form {
+    select {
+      color: white;
+      background-color: #52b472;
+      border: none;
+    }
+  }
 }
 .nav_settings {
   ul {
@@ -35,4 +52,41 @@
   a {
     color: #fff;
   }
+}
+.cartIcon {
+  position: relative;
+  color: white;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #d0833b;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.6rem;
+  padding: 0.15rem 0.4rem;
+}
+.nav_controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  padding-inline: 2rem;
+}
+.search_input {
+  background-color: #52b472;
+  color: white;
+  width: 50%;
+  padding-block: 0.5rem;
+  border: white solid;
+  border-radius: 0.8rem;
+  padding-inline-start: 1rem;
+}
+.search_input::placeholder {
+  color: white;
+}
+form {
+  flex-grow: 1;
 }

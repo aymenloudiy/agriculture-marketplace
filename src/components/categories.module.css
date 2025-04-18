@@ -1,12 +1,26 @@
 .categories {
   display: flex;
+  justify-content: center;
+
   ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    color: black;
+    margin-block-start: 0;
+    padding: 1rem 2rem;
+    box-shadow: rgb(38, 57, 77) 0px 2px 3px -1px;
+    border-radius: 0 0 0.8rem 0.8rem;
     gap: 6rem;
     li {
       list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: rgb(80, 79, 79);
+      }
     }
   }
 }

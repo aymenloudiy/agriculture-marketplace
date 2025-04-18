@@ -1,0 +1,117 @@
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 1rem;
+}
+
+.progress {
+  background: #eee;
+  height: 6px;
+  border-radius: 6px;
+  margin: 0.5rem 0 2rem;
+  position: relative;
+}
+
+.fill {
+  height: 100%;
+  background: orange;
+  border-radius: 6px;
+}
+
+.icon {
+  position: absolute;
+  top: -12px;
+  right: 0;
+  font-size: 1rem;
+  background: white;
+  padding: 0 4px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.productCell {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.productCell img {
+  width: 50px;
+  height: auto;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.clearBtn {
+  font-size: 0.8rem;
+  background: none;
+  border: none;
+  color: #888;
+  cursor: pointer;
+}
+
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.checkout {
+  margin-top: 1rem;
+  width: 100%;
+  background: #ea5d65;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.bonus {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  color: #444;
+}
+
+.promo summary {
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}

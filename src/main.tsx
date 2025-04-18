@@ -1,30 +1,45 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router";
 import "./index.css";
-import App from "./App.tsx";
-import { BrowserRouter, Route, Routes } from "react-router";
-import Home from "./pages/Home.tsx";
-import About from "./pages/About.tsx";
-import Login from "./pages/Login.tsx";
-import Payment from "./pages/Payment.tsx";
-import Details from "./pages/Details.tsx";
-import Error from "./pages/Error.tsx";
-import Cart from "./pages/Cart.tsx";
+
+import App from "./App";
+import AuthLayout from "./layout/authLayout";
+import Home from "./pages/Home";
+import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
+import Login from "./pages/loginPage";
+import ForgotPassword from "./pages/forgotPasswordPage";
+import Error from "./pages/Error";
+import SignupPage from "./pages/signupPage";
+
+import CategoryPage from "./pages/CategoryPage";
+import { CartProvider } from "./context/CartContext";
+import ProductPageWrapper from "./pages/ProductPageWrapper";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />}>
-          <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="login" element={<Login />} />
-          <Route path="payment" element={<Payment />} />
-          <Route path="details" element={<Details />} />
-          <Route path="cart" element={<Cart />} />
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
+      <CartProvider>
+        <Routes>
+          {/* Auth Routes - no header/footer */}
+          <Route element={<AuthLayout />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignupPage />} />
+            <Route path="/forgot-password" element={<ForgotPassword />} />
+          </Route>
+
+          {/* Main Layout - with header/footer */}
+          <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="product/:id" element={<ProductPageWrapper />} />
+            <Route path="cart" element={<CartPage />} />
+            <Route path="checkout" element={<CheckoutPage />} />
+            <Route path="category/:name" element={<CategoryPage />} />
+            <Route path="*" element={<Error />} />
+          </Route>
+        </Routes>
+      </CartProvider>
     </BrowserRouter>
   </StrictMode>
 );

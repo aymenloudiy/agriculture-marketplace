@@ -1,0 +1,128 @@
+.wrapper {
+  display: flex;
+  gap: 3rem;
+  max-width: 1100px;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.circleActive {
+  background-color: #ea5d65;
+  color: white;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.circle {
+  background: #eee;
+  color: #999;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepDisabled {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: #999;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.inputGroup input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  flex: 1;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.calculate {
+  background-color: #ea5d65;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.summary {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  font-size: 0.85rem;
+  color: #444;
+  text-decoration: none;
+}
+
+.summary p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.red {
+  color: #d64d5a;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.bonusBox {
+  background: #f1f3f5;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  text-align: center;
+}

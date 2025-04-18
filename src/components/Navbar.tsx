@@ -1,31 +1,55 @@
 import { NavLink } from "react-router";
 import styles from "./navbar.module.css";
+import { FaHeart, FaMoon, FaShoppingCart, FaUser } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
+
 export default function Navbar() {
+  const { cart } = useCart();
   return (
     <nav className={styles.navbar}>
       <div className={styles.nav_items}>
         <form action="">
           {/* TODO: Hide the label */}
-          <label htmlFor="search">search</label>
-          <input type="text" name="search" id="search" placeholder="search" />
+
+          <input
+            className={styles.search_input}
+            type="text"
+            name="search"
+            id="search"
+            placeholder="search"
+          />
         </form>
-        <div className={styles.nav_settings}>
-          <ul>
-            {/* TODO: These should be NavLinks */}
-            <li>
-              <a href="">Theme icon</a>
-            </li>
-            <li>
-              <a href="">Favourites icon</a>
-            </li>
-            <li>
-              <a href="">Profile icon</a>
-            </li>
-          </ul>
-        </div>
-        {/* TODO: This should be a NavLink, add the badge as well */}
-        <div className={styles.nav_cart}>
-          <a href="">Cart</a>
+        <div className={styles.nav_controls}>
+          <div className={styles.nav_settings}>
+            <ul>
+              {/* TODO: These should be NavLinks */}
+              <li>
+                <a href="">
+                  {" "}
+                  <FaMoon />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  {" "}
+                  <FaHeart />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  {" "}
+                  <FaUser />
+                </a>
+              </li>
+            </ul>
+          </div>
+          {/* TODO: This should be a NavLink, add the badge as well */}
+          <NavLink to="/cart" className={styles.cartIcon}>
+            <FaShoppingCart />
+            {cart.length > 0 && (
+              <span className={styles.badge}>{cart.length}</span>
+            )}
+          </NavLink>
         </div>
       </div>
       <div className={styles.nav_items}>
@@ -72,7 +96,7 @@ export default function Navbar() {
           </form>
           <form action="">
             <select name="currency" id="currency" defaultValue="MAD">
-              <option value="MAD">Dirham</option>
+              <option value="MAD">MAD (د.م.)</option>
               <option value="EUR">Euros</option>
               <option value="USD">Dollars</option>
             </select>
