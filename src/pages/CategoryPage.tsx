@@ -1,6 +1,6 @@
 import { useParams, useNavigate } from "react-router"; // note: 'react-router-dom' here
 import { products } from "../data/dataset";
-import styles from "./categoryPage.module.css";
+import styles from "./CategoryPage.module.css";
 import { useCart } from "../context/CartContext";
 
 export default function CategoryPage() {
