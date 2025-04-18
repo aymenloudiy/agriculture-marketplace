@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./CheckoutStepOne.module.css";
+import styles from "./checkoutStepOne.module.css";
 import { useCart } from "../../context/CartContext";
 
 interface CheckoutStepOneProps {

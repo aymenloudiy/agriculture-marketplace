@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./ProductPage.module.css";
+import styles from "./productPage.module.css";
 import { Product } from "../../utils/types";
 import {
   FaCheckCircle,

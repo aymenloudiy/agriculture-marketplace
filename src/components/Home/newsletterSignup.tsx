@@ -1,4 +1,4 @@
-import styles from "./NewsletterSignup.module.css";
+import styles from "./newsletterSignup.module.css";
 import {
   FaInstagram,
   FaFacebookF,
