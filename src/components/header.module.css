@@ -1,4 +1,13 @@
 .header_children {
   display: flex;
-  background-color: #52b472;
+  background-color: #00882c;
+  padding-inline: 4rem;
+}
+.logoImg {
+  height: 50px;
+  object-fit: contain;
+}
+
+.logo {
+  margin-right: 1rem;
 }

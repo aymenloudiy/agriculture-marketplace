@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import styles from "./loginPage.module.css";
 import { FaGoogle, FaFacebookF, FaApple } from "react-icons/fa";
 import { IoEyeOffOutline, IoEyeOutline } from "react-icons/io5";
+import { useNavigate } from "react-router";
 
 const LoginPage: React.FC = () => {
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate();
   return (
     <div className={styles.container}>
       {/* Left */}
@@ -39,13 +40,18 @@ const LoginPage: React.FC = () => {
           </label>
 
           <div className={styles.options}>
-            <label>
-              <input type="checkbox" /> Remember for 30 days
-            </label>
+            <div>
+              <input type="checkbox" />
+              <label>Remember for 30 days</label>
+            </div>
             <a href="#">Forgot password?</a>
           </div>
 
-          <button type="submit" className={styles.signIn}>
+          <button
+            type="submit"
+            className={styles.signIn}
+            onClick={() => navigate("/")}
+          >
             Sign in
           </button>
 
@@ -71,7 +77,7 @@ const LoginPage: React.FC = () => {
 
       {/* Right */}
       <div className={styles.right}>
-        <img src="/assets/olive-oil.jpg" alt="Olive oil bottle" />
+        <img src="/src/assets/loginbg.jpg" alt="Olive oil bottle" />
       </div>
     </div>
   );

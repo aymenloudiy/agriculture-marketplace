@@ -29,7 +29,7 @@
   form {
     select {
       color: white;
-      background-color: #52b472;
+      background-color: #00882c;
       border: none;
     }
   }
@@ -76,7 +76,7 @@
   padding-inline: 2rem;
 }
 .search_input {
-  background-color: #52b472;
+  background-color: #00882c;
   color: white;
   width: 50%;
   padding-block: 0.5rem;

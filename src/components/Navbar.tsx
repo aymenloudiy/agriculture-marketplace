@@ -36,10 +36,9 @@ export default function Navbar() {
                 </a>
               </li>
               <li>
-                <a href="">
-                  {" "}
+                <NavLink to="/login">
                   <FaUser />
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

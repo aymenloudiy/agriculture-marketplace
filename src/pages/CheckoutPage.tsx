@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./CheckoutPage.module.css";
+import styles from "./checkoutPage.module.css";
 
 import CheckoutStepOne from "../components/Checkout/checkoutStepOne";
 import CheckoutStepTwo from "../components/Checkout/checkoutStepTwo";

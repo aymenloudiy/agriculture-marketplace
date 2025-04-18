@@ -80,6 +80,10 @@ input[type="text"] {
   font-size: 0.85rem;
   align-items: center;
   color: #666;
+  div {
+    display: flex;
+    gap: 0.5rem;
+  }
 }
 
 .signIn {

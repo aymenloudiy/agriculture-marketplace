@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "./SignupPage.module.css";
+import styles from "./signupPage.module.css";
 import { IoEyeOutline, IoEyeOffOutline } from "react-icons/io5";
 import {
   FaGoogle,
