@@ -31,3 +31,39 @@
   text-decoration: none;
   color: inherit;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .header {
+    align-items: center;
+    text-align: center;
+  }
+
+  .header h2 {
+    font-size: 1.4rem;
+  }
+}

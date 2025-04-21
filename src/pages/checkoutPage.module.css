@@ -29,3 +29,25 @@
 .stepContent {
   margin-top: 2rem;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 1rem;
+  }
+
+  .tabs {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+
+  .tab {
+    flex: 1 1 40%;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+    text-align: center;
+  }
+
+  .stepContent {
+    margin-top: 1.5rem;
+  }
+}

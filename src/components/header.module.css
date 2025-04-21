@@ -11,3 +11,42 @@
 .logo {
   margin-right: 1rem;
 }
+/* Add to existing styles */
+.header {
+  width: 100%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header_children {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: #00882c;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logoImg {
+  height: 50px;
+  max-width: 100%;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .header_children {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1rem;
+    text-align: center;
+  }
+
+  .logoImg {
+    height: 40px;
+  }
+}

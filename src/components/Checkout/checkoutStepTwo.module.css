@@ -155,3 +155,57 @@ select {
   text-align: center;
   font-size: 0.95rem;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .step,
+  .stepDone {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  input,
+  select {
+    width: 100%;
+    flex: unset;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .summary p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .continueBtn {
+    width: 100%;
+  }
+
+  .bonusBox {
+    font-size: 0.85rem;
+  }
+
+  .stepDisabled {
+    flex-direction: row;
+  }
+}

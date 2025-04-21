@@ -24,3 +24,32 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .categories ul {
+    gap: 3rem;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .categories ul {
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1rem 0.5rem;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .categories ul li {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .categories ul li a {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+}

@@ -115,3 +115,73 @@
   font-weight: bold;
   margin-top: 1rem;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .table thead {
+    display: none;
+  }
+
+  .table,
+  .table tbody,
+  .table tr,
+  .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 1rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border: none;
+  }
+
+  .productCell {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .productCell img {
+    width: 80px;
+  }
+
+  .checkout {
+    font-size: 1rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+
+  .summary p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .bonus {
+    text-align: center;
+  }
+
+  .promo details {
+    font-size: 0.9rem;
+  }
+}

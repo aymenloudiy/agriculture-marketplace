@@ -127,3 +127,66 @@ h2 {
     fill: #ffb703;
   }
 }
+@media (max-width: 768px) {
+  .grid {
+    flex-direction: column;
+    align-items: stretch;
+    display: none;
+  }
+
+  .overview {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .score {
+    font-size: 1.5rem;
+  }
+
+  .reviewBtn {
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .barRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bar {
+    width: 100%;
+  }
+
+  .review {
+    font-size: 0.95rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .reviewBtn {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}

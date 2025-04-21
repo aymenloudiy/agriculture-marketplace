@@ -141,3 +141,45 @@ input[type="text"] {
   height: 100%;
   object-fit: cover;
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 2rem;
+    flex: none;
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .left h2 {
+    font-size: 1.5rem;
+  }
+
+  .left p {
+    font-size: 0.9rem;
+  }
+
+  .signIn {
+    font-size: 0.95rem;
+  }
+
+  .social {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .social button {
+    width: 100%;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

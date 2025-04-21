@@ -177,3 +177,61 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .mainImage {
+    max-height: 300px;
+  }
+
+  .price_avail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 1rem 0;
+  }
+
+  .quantity_add {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .actions {
+    justify-content: space-between;
+  }
+
+  .shippingHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .mainImage {
+    max-height: 250px;
+  }
+
+  .cart {
+    width: 100%;
+  }
+
+  .secondary {
+    flex: 1;
+  }
+
+  .accordion {
+    font-size: 0.9rem;
+  }
+}

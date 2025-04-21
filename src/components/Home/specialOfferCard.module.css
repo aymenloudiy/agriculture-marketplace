@@ -82,3 +82,42 @@
   font-size: 1.2rem;
   cursor: pointer;
 }
+@media (max-width: 600px) {
+  .card {
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .image {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .rating {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  .price {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .cart {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  .progressBar {
+    width: 100%;
+  }
+}

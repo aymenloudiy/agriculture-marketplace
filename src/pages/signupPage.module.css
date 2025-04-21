@@ -157,3 +157,47 @@ input[type="text"] {
   align-items: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .left h2 {
+    font-size: 1.5rem;
+  }
+
+  .form {
+    gap: 0.8rem;
+  }
+
+  .oauth {
+    flex-direction: column;
+  }
+
+  .oauth button {
+    width: 100%;
+  }
+
+  .submit {
+    font-size: 0.95rem;
+  }
+
+  .checkbox {
+    font-size: 0.8rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .help {
+    font-size: 0.8rem;
+  }
+}

@@ -31,3 +31,47 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .footer_content {
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+  }
+
+  .footer_content_list {
+    flex: 1 1 40%;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .footer_content_list {
+    align-items: center;
+  }
+
+  .footer_content_list ul {
+    width: 100%;
+  }
+
+  .footer_content_list li {
+    padding-block: 0.4rem;
+  }
+
+  .footer_content_contact {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .footer_rights {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}

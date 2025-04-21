@@ -126,3 +126,72 @@
   font-size: 0.95rem;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .step {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .inputGroup {
+    flex-direction: column;
+  }
+
+  .inputGroup input,
+  .calculate {
+    width: 100%;
+  }
+
+  .summary p {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .slotGrid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .bonusBox {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .shippingMethods {
+    flex-direction: column;
+  }
+
+  .shippingOption {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .slotGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .continueBtn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+}
